@@ -31,18 +31,31 @@ Describe your plugin in plain language. The AI builds it for you — DSP, GUI, b
 
 ## 🚀 Quick Start
 
-### Clone
+### Option 1: Claude Code (npx install)
+
+```bash
+npx -y degit diabloidyobane/DREAMPLUG my-plugin-workspace
+cd my-plugin-workspace
+git init && git submodule update --init --recursive
+```
+
+Then open the folder in Claude Code and run `/dream MyPlugin`.
+
+### Option 2: Git Clone
+
 ```powershell
 git clone --recurse-submodules https://github.com/diabloidyobane/DREAMPLUG.git
 cd DREAMPLUG
 ```
 
 ### Prerequisites
+
 - **Windows:** Windows 11, PowerShell 7+, Visual Studio 2022 (C++ tools), CMake 3.22+, Git
 - **macOS:** macOS 10.13+, Xcode + CLI tools, CMake 3.22+, Git
 - **All platforms:** An LLM coding agent (Antigravity, Claude Code, Kilo, Cursor)
 
 ### Create Your First Plugin
+
 ```
 /dream MyReverb
 ```
