@@ -33,7 +33,7 @@ Describe your plugin in plain language. The AI builds it for you — DSP, GUI, b
 
 ### Clone
 ```powershell
-git clone --recurse-submodules https://github.com/YOUR_USERNAME/DREAMPLUG.git
+git clone --recurse-submodules https://github.com/diabloidyobane/DREAMPLUG.git
 cd DREAMPLUG
 ```
 
