@@ -43,7 +43,16 @@ Then open the folder in Claude Code and run `/dream MyPlugin`.
 
 ### Option 2: Git Clone
 
+**Windows (PowerShell)**
+
 ```powershell
+git clone --recurse-submodules https://github.com/diabloidyobane/DREAMPLUG.git
+cd DREAMPLUG
+```
+
+**macOS / Linux (Bash)**
+
+```bash
 git clone --recurse-submodules https://github.com/diabloidyobane/DREAMPLUG.git
 cd DREAMPLUG
 ```
@@ -61,6 +70,46 @@ cd DREAMPLUG
 ```
 
 The AI walks you through every phase from concept to compiled VST3.
+
+## 🔄 What's New vs Original [Audio Plugin Coder](https://github.com/Noizefield/audio-plugin-coder)
+
+> Forked from [Noizefield/audio-plugin-coder](https://github.com/Noizefield/audio-plugin-coder). Here's everything DREAM PLUG adds:
+
+### New Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔌 **CLAP Format** | Full CLAP plugin format via `clap-juce-extensions` — CMake template ready |
+| 🎛️ **Preset System** | Complete XML/ValueTree preset architecture — save, load, browse, factory presets |
+| 🛒 **Marketplace Kit** | Installer scripts (InnoSetup/pkgbuild), licensing, metadata, update checks |
+| 🤝 **Real-time Collab** | OSC-based parameter sync between plugin instances via `juce_osc` |
+| 🧪 **Test Workflow** | New `/test` command — pluginval integration + DAW smoke testing |
+| 🔄 **Smart Resume** | New `/resume` command — auto-detects last phase from `status.json` |
+| 📊 **Status Check** | New `/status` command — pretty-print project state at a glance |
+
+### Enhanced Skills (deeper domain knowledge)
+
+| Skill | What Changed |
+|-------|-------------|
+| **Ideation** | Added DSP category taxonomy (synth, effect, utility, sampler, analyzer), CLAP support, preset philosophy, MIDI CC mapping |
+| **Planning** | Added architecture pattern library, CLAP format considerations, distribution readiness assessment |
+| **Design** | Added preset browser UI patterns (Top Bar, Sidebar, Dropdown), collaboration UI, CLAP-specific design notes |
+| **Implementation** | Added production DSP code patterns, CLAP compliance, preset/collaboration integration hooks |
+
+### 3 New Skill Modules
+
+| Skill | Purpose |
+|-------|---------|
+| `skill_presets` | Preset save/load, browser UI, DAW integration, factory preset generation |
+| `skill_marketplace` | Installer builds, licensing, metadata templates, update mechanisms |
+| `skill_collaboration` | OSC parameter sync, session management, conflict resolution |
+
+### Infrastructure
+
+- **Antigravity-native workflows** — Full `.agents/workflows/` directory (8 workflow files)
+- **CMake template upgraded** — CLAP support, `juce_osc` module, C++20, better defaults
+- **Dual agent support** — Works with both `.agents/` (Antigravity) and `.agent/` (Kilo/Claude)
+- **Rebranded** — All references updated from "Audio Plugin Coder" → "DREAM PLUG"
 
 ## 📖 How It Works
 
