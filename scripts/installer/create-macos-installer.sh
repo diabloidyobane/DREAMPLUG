@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# APC macOS Installer Creator
+# DREAM PLUG macOS Installer Creator
 # Creates a DMG containing VST3, AU, and Standalone builds.
 #
 # Usage: bash scripts/installer/create-macos-installer.sh <PluginName> <Version> [CompanyName]
@@ -9,7 +9,7 @@ set -euo pipefail
 # --- PARSE ARGUMENTS ---
 PLUGIN_NAME="${1:-}"
 VERSION="${2:-}"
-COMPANY_NAME="${3:-APC}"
+COMPANY_NAME="${3:-DREAM PLUG}"
 
 if [[ -z "$PLUGIN_NAME" || -z "$VERSION" ]]; then
     echo "Usage: $0 <PluginName> <Version> [CompanyName]" >&2

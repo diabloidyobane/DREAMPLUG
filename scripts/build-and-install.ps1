@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    APC Master Builder with Enhanced Error Detection and Testing
+    DREAM PLUG Master Builder with Enhanced Error Detection and Testing
 #>
 [CmdletBinding()]
 param(
@@ -34,7 +34,7 @@ if (Test-Path $StatusJson) {
     }
 }
 
-Write-Host "--- APC BUILDER: $PluginName ---" -ForegroundColor Cyan
+Write-Host "--- DREAM PLUG BUILDER: $PluginName ---" -ForegroundColor Cyan
 if ($UseVisage) {
     Write-Host "Framework: visage" -ForegroundColor DarkGray
 }
@@ -47,7 +47,7 @@ if ($state.current_phase -ne "code_complete" -and -not $SkipTests) {
 
 # 1. Configure with error monitoring
 Write-Host "Configuring build..." -ForegroundColor Yellow
-$visageFlag = if ($UseVisage) { "-DAPC_ENABLE_VISAGE:BOOL=ON" } else { "" }
+$visageFlag = if ($UseVisage) { "-DDP_ENABLE_VISAGE:BOOL=ON" } else { "" }
 $configureCommand = "cmake -S `"$RootPath`" -B `"$BuildDir`" -G `"Visual Studio 17 2022`" -A x64 --fresh $visageFlag"
 $configResult = Invoke-MonitoredCommand -Command $configureCommand -ShowOutput -ThrowOnError
 

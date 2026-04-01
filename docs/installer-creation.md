@@ -37,7 +37,7 @@ This guide covers how to create installers for all platforms.
 |-----------|----------|---------|-------------|
 | `PluginName` | Yes | - | Plugin folder name |
 | `Version` | Yes | - | Version number (e.g., "1.0.0") |
-| `CompanyName` | No | "APC" | Company name |
+| `CompanyName` | No | "DREAM PLUG" | Company name |
 | `PluginURL` | No | GitHub URL | Plugin website |
 
 ### Output

@@ -1,6 +1,6 @@
 # Plugin Icon Management Guide
 
-This guide explains how to add icons to your APC plugins for the standalone executable and desktop shortcuts.
+This guide explains how to add icons to your DREAM PLUG plugins for the standalone executable and desktop shortcuts.
 
 ## Overview
 
@@ -178,7 +178,7 @@ Multi-resolution Windows icon file
 ### File: `plugins/MyPlugin/CMakeLists.txt`
 ```cmake
 juce_add_plugin(MyPlugin
-    COMPANY_NAME "APC"
+    COMPANY_NAME "DREAM PLUG"
     PLUGIN_MANUFACTURER_CODE Apco
     PLUGIN_CODE MyPl
     FORMATS ${PLUGIN_FORMATS}
@@ -206,7 +206,7 @@ Consider adding a script to generate icons from a source SVG:
 ```
 
 ### Template Integration
-The APC template system could:
+The DREAM PLUG template system could:
 1. Generate placeholder icons during `/dream` phase
 2. Include icon requirements in the creative brief
 3. Provide icon design guidelines per plugin type

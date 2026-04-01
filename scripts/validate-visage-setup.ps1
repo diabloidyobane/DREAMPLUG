@@ -45,11 +45,11 @@ if (-not (Test-Path $RootCMake)) {
     $Issues += "Root CMakeLists.txt not found"
 } else {
     $rootContent = Get-Content $RootCMake -Raw
-    if ($rootContent -notmatch "APC_ENABLE_VISAGE") {
-        $Issues += "Root CMakeLists.txt missing APC_ENABLE_VISAGE option"
+    if ($rootContent -notmatch "DP_ENABLE_VISAGE") {
+        $Issues += "Root CMakeLists.txt missing DP_ENABLE_VISAGE option"
     }
     if ($rootContent -notmatch 'add_subdirectory\("\$\{VISAGE_DIR\}"\)') {
-        $Warnings += "Root CMakeLists.txt does not add Visage subdirectory (APC_ENABLE_VISAGE may be OFF)"
+        $Warnings += "Root CMakeLists.txt does not add Visage subdirectory (DP_ENABLE_VISAGE may be OFF)"
     }
     if ($rootContent -notmatch "visage::visage") {
         $Warnings += "Root CMakeLists.txt does not create visage::visage alias target"

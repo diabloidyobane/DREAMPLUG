@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Automated dependency validation for APC (audio-plugin-coder)
+    Automated dependency validation for DREAM PLUG
 #>
 
 param(

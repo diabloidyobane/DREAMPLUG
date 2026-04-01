@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# APC Plugin Backup (macOS/Linux)
+# DREAM PLUG Plugin Backup (macOS/Linux)
 # Creates a clean ZIP backup of a plugin, excluding build artifacts.
 #
 # Usage: bash scripts/backup.sh <PluginName> <Version>

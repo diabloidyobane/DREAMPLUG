@@ -1,4 +1,4 @@
-# PluginVal Integration Module for APC Build Process
+# PluginVal Integration Module for DREAM PLUG Build Process
 # Automates plugin validation testing with PluginVal
 
 function Test-WithPluginVal {

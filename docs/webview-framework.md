@@ -236,7 +236,7 @@ juce_add_binary_data(YourPlugin_WebUI
 
 # Plugin definition
 juce_add_plugin(YourPlugin
-    COMPANY_NAME "APC"
+    COMPANY_NAME "DREAM PLUG"
     PLUGIN_MANUFACTURER_CODE Apco
     PLUGIN_CODE YrPl
     FORMATS VST3 Standalone

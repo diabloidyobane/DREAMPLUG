@@ -1,7 +1,7 @@
 # macOS Support for Audio Plugin Coder
 
 ## Context
-APC is a JUCE 8-based audio plugin generator that currently only supports Windows 11 (PowerShell scripts, Visual Studio, Inno Setup). The CMake build system and CI/CD workflows already support macOS, but all operational scripts (build, preview, install, system-check, backup, rollback, installer) are PowerShell-only. This plan adds standalone Bash equivalents for macOS.
+DREAM PLUG is a JUCE 8-based audio plugin generator that currently only supports Windows 11 (PowerShell scripts, Visual Studio, Inno Setup). The CMake build system and CI/CD workflows already support macOS, but all operational scripts (build, preview, install, system-check, backup, rollback, installer) are PowerShell-only. This plan adds standalone Bash equivalents for macOS.
 
 ## Scope
 

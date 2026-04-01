@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# APC State Management Module (macOS/Linux)
-# Provides standardized state management for APC plugin development workflow.
+# DREAM PLUG State Management Module (macOS/Linux)
+# Provides standardized state management for DREAM PLUG plugin development workflow.
 # Source this file: . scripts/state-management.sh
 
 set -euo pipefail

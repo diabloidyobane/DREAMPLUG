@@ -1,4 +1,4 @@
-# Terminal Output Monitoring Module for APC Build Process
+# Terminal Output Monitoring Module for DREAM PLUG Build Process
 # Provides real-time error detection and long-running command monitoring
 
 function Watch-TerminalOutput {

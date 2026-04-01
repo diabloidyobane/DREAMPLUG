@@ -1,13 +1,13 @@
-# APC Project Structure Guide
+# DREAM PLUG Project Structure Guide
 
-This document explains the complete directory structure and organization of the Audio Plugin Coder (APC) framework.
+This document explains the complete directory structure and organization of the DREAM PLUG framework.
 
 ## Overview
 
-APC follows a monorepo architecture with clear separation between framework code, tools, plugin projects, and build artifacts.
+DREAM PLUG follows a monorepo architecture with clear separation between framework code, tools, plugin projects, and build artifacts.
 
 ```
-audio-plugin-coder/
+DREAMPLUG/
 ├── .agent/              # AI agent configuration and skills
 ├── _tools/                 # External dependencies (JUCE, pluginval)
 ├── build/                  # Build artifacts (gitignored)
@@ -74,7 +74,7 @@ Contains all configuration, skills, and knowledge base for AI agents.
 
 ### `_tools/` - External Dependencies
 
-Third-party tools and frameworks required by APC.
+Third-party tools and frameworks required by DREAM PLUG.
 
 ```
 _tools/
@@ -176,7 +176,7 @@ scripts/
 
 ### `docs/` - Documentation
 
-Comprehensive documentation for the APC framework.
+Comprehensive documentation for the DREAM PLUG framework.
 
 ```
 docs/
@@ -285,7 +285,7 @@ Each plugin has its own `CMakeLists.txt`:
 
 ```cmake
 juce_add_plugin(PluginName
-    COMPANY_NAME "APC"
+    COMPANY_NAME "DREAM PLUG"
     PLUGIN_MANUFACTURER_CODE Apco
     PLUGIN_CODE PlgN
     FORMATS VST3 Standalone

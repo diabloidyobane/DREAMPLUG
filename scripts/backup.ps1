@@ -35,7 +35,7 @@ if (-not (Test-Path $SourceDir)) {
 }
 
 # 3. Create Temp Staging Area
-$TempDir = Join-Path ([System.IO.Path]::GetTempPath()) "APC_Backup_$([Guid]::NewGuid())"
+$TempDir = Join-Path ([System.IO.Path]::GetTempPath()) "DREAMPLUG_Backup_$([Guid]::NewGuid())"
 $StageDir = Join-Path $TempDir $PluginName
 New-Item -ItemType Directory -Path $StageDir -Force | Out-Null
 

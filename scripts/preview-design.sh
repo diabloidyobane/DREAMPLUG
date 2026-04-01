@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# APC GUI Preview (macOS)
+# DREAM PLUG GUI Preview (macOS)
 # Builds and launches the Standalone target for instant GUI preview.
 #
 # Usage: bash scripts/preview-design.sh <PluginName>
@@ -31,14 +31,14 @@ if [[ -f "$STATUS_JSON" ]] && command -v jq &>/dev/null; then
     fi
 fi
 
-echo "--- APC PREVIEW: $PLUGIN_NAME ---"
+echo "--- DREAM PLUG PREVIEW: $PLUGIN_NAME ---"
 echo "Framework: $FRAMEWORK_NAME"
 
 # --- 1. CONFIGURE ---
 echo "Configuring..."
 VISAGE_FLAG=""
 if $USE_VISAGE; then
-    VISAGE_FLAG="-DAPC_ENABLE_VISAGE:BOOL=ON"
+    VISAGE_FLAG="-DDP_ENABLE_VISAGE:BOOL=ON"
 fi
 
 cmake -S "$ROOT_PATH" -B "$BUILD_DIR" \
@@ -50,8 +50,8 @@ cmake -S "$ROOT_PATH" -B "$BUILD_DIR" \
 
 # Verify Visage flag in cache if applicable
 if $USE_VISAGE && [[ -f "$BUILD_DIR/CMakeCache.txt" ]]; then
-    if ! grep -q "APC_ENABLE_VISAGE:BOOL=ON" "$BUILD_DIR/CMakeCache.txt"; then
-        echo "ERROR: APC_ENABLE_VISAGE is OFF in CMakeCache.txt. Reconfigure with -DAPC_ENABLE_VISAGE=ON." >&2
+    if ! grep -q "DP_ENABLE_VISAGE:BOOL=ON" "$BUILD_DIR/CMakeCache.txt"; then
+        echo "ERROR: DP_ENABLE_VISAGE is OFF in CMakeCache.txt. Reconfigure with -DDP_ENABLE_VISAGE=ON." >&2
         exit 1
     fi
 fi

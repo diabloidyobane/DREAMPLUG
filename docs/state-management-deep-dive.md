@@ -1,6 +1,6 @@
 # State Management Deep Dive
 
-This guide provides comprehensive documentation of the APC State Management System, which tracks plugin development progress across all phases.
+This guide provides comprehensive documentation of the DREAM PLUG State Management System, which tracks plugin development progress across all phases.
 
 ## Overview
 

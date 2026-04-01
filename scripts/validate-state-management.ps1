@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Validate APC State Management System
+    Validate DREAM PLUG State Management System
 .DESCRIPTION
     Tests all state management functions and validates integration with skills.
     RUN AS ADMINISTRATOR RECOMENDED FOR FILE OPERATIONS.
@@ -19,7 +19,7 @@ $RepoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 Write-Host "Repo Root detected at: $RepoRoot" -ForegroundColor Gray
 
 function Test-StateManagementSystem {
-    Write-Host "=== APC State Management Validation ===" -ForegroundColor Cyan
+    Write-Host "=== DREAM PLUG State Management Validation ===" -ForegroundColor Cyan
 
     # 1. Test State Management Module Loading
     Write-Host "1. Testing module loading..." -ForegroundColor Yellow

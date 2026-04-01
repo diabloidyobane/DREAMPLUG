@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Audio Plugin Coder (APC) will be documented in this file.
+All notable changes to DREAM PLUG will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -25,12 +25,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `scripts/installer/create-macos-installer.sh` — DMG installer creation script for macOS
   - `notes/PLAN1-macos.md` / `notes/PLAN1-results.md` — Contributor's porting notes
 
-- **npx Installer** (`npx audio-plugin-coder@latest`)
+- **npx Installer** (`npx DREAMPLUG@latest`)
   - One-command setup: clones the repo and guides through initial configuration
   - Platform-aware: detects Windows, macOS, and Linux and shows relevant next steps
   - Checks for required tools (Git, Node.js, VS Code, CMake, VS Build Tools / Xcode / GCC)
   - Zero dependencies — pure Node.js stdlib
-  - Works direct from GitHub: `npx github:Noizefield/audio-plugin-coder`
+  - Works direct from GitHub: `npx github:Noizefield/DREAMPLUG`
 
 - **Versioning**
   - Added `package.json` with semantic versioning
@@ -181,8 +181,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Support
 For issues, feature requests, or questions:
-- GitHub Issues: https://github.com/Noizefield/audio-plugin-coder/issues
-- Discussions: https://github.com/Noizefield/audio-plugin-coder/discussions
+- GitHub Issues: https://github.com/diabloidyobane/DREAMPLUG/issues
+- Discussions: https://github.com/diabloidyobane/DREAMPLUG/discussions
 
 ---
 

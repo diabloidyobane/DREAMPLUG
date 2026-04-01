@@ -6,41 +6,41 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ============================================
 # OPTIONAL FEATURES
 # ============================================
-option(APC_ENABLE_VISAGE "Enable Visage UI framework support" OFF)
+option(DP_ENABLE_VISAGE "Enable Visage UI framework support" OFF)
 
 # ============================================
 # PLATFORM DETECTION
 # ============================================
 if(WIN32)
-    set(APC_PLATFORM "Windows")
-    set(APC_PLATFORM_WINDOWS TRUE)
+    set(DP_PLATFORM "Windows")
+    set(DP_PLATFORM_WINDOWS TRUE)
 elseif(APPLE)
-    set(APC_PLATFORM "macOS")
-    set(APC_PLATFORM_MACOS TRUE)
+    set(DP_PLATFORM "macOS")
+    set(DP_PLATFORM_MACOS TRUE)
 elseif(UNIX)
-    set(APC_PLATFORM "Linux")
-    set(APC_PLATFORM_LINUX TRUE)
+    set(DP_PLATFORM "Linux")
+    set(DP_PLATFORM_LINUX TRUE)
 else()
-    set(APC_PLATFORM "Unknown")
+    set(DP_PLATFORM "Unknown")
 endif()
 
-message(STATUS "--- APC BUILD SYSTEM ---")
-message(STATUS "Platform: ${APC_PLATFORM}")
+message(STATUS "--- DREAM PLUG BUILD SYSTEM ---")
+message(STATUS "Platform: ${DP_PLATFORM}")
 message(STATUS "Root Directory: ${CMAKE_CURRENT_SOURCE_DIR}")
 
 # ============================================
 # GLOBAL DEFINITIONS (Platform-Specific)
 # ============================================
-if(APC_PLATFORM_WINDOWS)
+if(DP_PLATFORM_WINDOWS)
     # Windows-specific: WebView2
     set(JUCE_USE_WIN_WEBVIEW2 ON CACHE BOOL "" FORCE)
     add_definitions(-DJUCE_USE_WIN_WEBVIEW2=1)
     message(STATUS "WebView2: Enabled")
-elseif(APC_PLATFORM_MACOS)
+elseif(DP_PLATFORM_MACOS)
     # macOS-specific: WKWebView (system framework)
     set(JUCE_USE_WIN_WEBVIEW2 OFF CACHE BOOL "" FORCE)
     message(STATUS "WebView: WKWebView (macOS)")
-elseif(APC_PLATFORM_LINUX)
+elseif(DP_PLATFORM_LINUX)
     # Linux-specific: WebKitGTK
     set(JUCE_USE_WIN_WEBVIEW2 OFF CACHE BOOL "" FORCE)
     message(STATUS "WebView: WebKitGTK (Linux)")
@@ -58,7 +58,7 @@ endif()
 add_subdirectory("${JUCE_DIR}")
 
 # Visage is only needed for Visage UI framework plugins
-if(APC_ENABLE_VISAGE)
+if(DP_ENABLE_VISAGE)
     if(NOT EXISTS "${VISAGE_DIR}")
         message(FATAL_ERROR "Visage missing at ${VISAGE_DIR}")
     endif()
@@ -75,7 +75,7 @@ message(STATUS "Scanning for plugins in: ${CMAKE_CURRENT_SOURCE_DIR}/plugins")
 
 file(GLOB PLUGIN_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/plugins/*")
 
-set(APC_PLUGIN_COUNT 0)
+set(DP_PLUGIN_COUNT 0)
 
 foreach(PLUGIN_DIR ${PLUGIN_DIRS})
     get_filename_component(DIR_NAME ${PLUGIN_DIR} NAME)
@@ -84,12 +84,12 @@ foreach(PLUGIN_DIR ${PLUGIN_DIRS})
         if(EXISTS "${PLUGIN_DIR}/CMakeLists.txt")
             message(STATUS " -> FOUND: ${DIR_NAME}")
             add_subdirectory("${PLUGIN_DIR}")
-            math(EXPR APC_PLUGIN_COUNT "${APC_PLUGIN_COUNT} + 1")
+            math(EXPR DP_PLUGIN_COUNT "${DP_PLUGIN_COUNT} + 1")
         else()
             message(STATUS " -> SKIPPING: ${DIR_NAME} (No CMakeLists.txt)")
         endif()
     endif()
 endforeach()
 
-message(STATUS "Total plugins found: ${APC_PLUGIN_COUNT}")
-message(STATUS "--- END ---")
+message(STATUS "Total plugins found: ${DP_PLUGIN_COUNT}")
+message(STATUS "--- DREAM PLUG END ---")

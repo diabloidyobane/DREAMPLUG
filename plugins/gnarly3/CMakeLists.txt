@@ -5,7 +5,7 @@
 # REQUIRE VISAGE
 # ============================================
 if(NOT TARGET visage::visage)
-    message(STATUS "Skipping gnarly3: Visage not enabled (set APC_ENABLE_VISAGE=ON to build)")
+    message(STATUS "Skipping gnarly3: Visage not enabled (set DP_ENABLE_VISAGE=ON to build)")
     return()
 endif()
 

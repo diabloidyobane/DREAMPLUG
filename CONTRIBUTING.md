@@ -1,8 +1,8 @@
-# Contributing to Audio Plugin Coder
+# Contributing to DREAM PLUG
 
 ## ⚠️ Beta Version Disclaimer
 
-**Audio Plugin Coder (APC) is currently in beta development.** This means the project is not yet fully released or stable. Features may be incomplete, APIs may change, and there may be bugs. Use at your own risk in development environments only.
+**DREAM PLUG is currently in beta development.** This means the project is not yet fully released or stable. Features may be incomplete, APIs may change, and there may be bugs. Use at your own risk in development environments only.
 
 ## How to Contribute
 
@@ -10,18 +10,18 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 
 ### Ways to Contribute
 
-1. **Report Issues** - Found a bug? [Open an issue](https://github.com/Noizefield/audio-plugin-coder/issues) with details.
-2. **Suggest Features** - Have an idea? [Start a discussion](https://github.com/Noizefield/audio-plugin-coder/discussions).
+1. **Report Issues** - Found a bug? [Open an issue](https://github.com/diabloidyobane/DREAMPLUG/issues) with details.
+2. **Suggest Features** - Have an idea? [Start a discussion](https://github.com/diabloidyobane/DREAMPLUG/discussions).
 3. **Submit Pull Requests** - Fix bugs or add features.
-4. **Improve Documentation** - Help make APC easier to use.
-5. **Test and Provide Feedback** - Try APC and share your experience.
+4. **Improve Documentation** - Help make DREAM PLUG easier to use.
+5. **Test and Provide Feedback** - Try DREAM PLUG and share your experience.
 
 ### Development Setup
 
 1. Clone the repository with submodules:
    ```bash
-   git clone --recursive https://github.com/Noizefield/audio-plugin-coder.git
-   cd audio-plugin-coder
+   git clone --recurse-submodules https://github.com/diabloidyobane/DREAMPLUG.git
+   cd DREAMPLUG
    ```
 
 2. Run the setup script:
@@ -42,7 +42,7 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 
 ### Pull Requests
 
-- Create a feature branch from `main`.
+- Create a feature branch from `master`.
 - Ensure your code passes any existing tests.
 - Update documentation if needed.
 - Provide a clear description of changes.
@@ -55,19 +55,15 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 
 ## Technology Stack
 
-APC uses the following technologies:
+DREAM PLUG uses the following technologies:
 
 - **JUCE 8** - Cross-platform audio plugin framework
-- **Visage** - Planned native C++ UI framework (not yet implemented)
-- **WebView2** - HTML5 Canvas-based UI framework
-- **CMake** - Build system
-- **PowerShell** - Automation scripts
+- **Visage** - Native C++ UI framework
+- **WebView2 / WKWebView** - HTML5 Canvas-based UI framework
+- **CMake** - Build system (C++20)
+- **PowerShell / Bash** - Automation scripts
 - **YAML** - Configuration and knowledge base
 - **Markdown** - Documentation and workflows
-
-### Visage Integration (Planned)
-
-Visage is a modern, high-performance UI framework for C++ applications. We plan to integrate Visage as an alternative to WebView for native UI rendering. Currently, Visage is included as a Git submodule but is not yet implemented in the workflow system. Contributions towards Visage integration are welcome once the core system is more stable.
 
 ## License
 
@@ -75,7 +71,7 @@ By contributing, you agree that your contributions will be licensed under the sa
 
 ## Contact
 
-- **Issues:** [GitHub Issues](https://github.com/Noizefield/audio-plugin-coder/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/Noizefield/audio-plugin-coder/discussions)
+- **Issues:** [GitHub Issues](https://github.com/diabloidyobane/DREAMPLUG/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/diabloidyobane/DREAMPLUG/discussions)
 
-Thank you for contributing to Audio Plugin Coder! 🎵
+Thank you for contributing to DREAM PLUG! 🎵

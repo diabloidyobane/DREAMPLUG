@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# APC System Check (macOS)
+# DREAM PLUG System Check (macOS)
 # Validates all dependencies required for building audio plugins.
 # Usage: bash scripts/system-check.sh [--check-all]
 

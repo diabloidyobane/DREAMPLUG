@@ -1,10 +1,10 @@
 # Plugin Development Lifecycle
 
-Complete guide to the APC plugin development workflow from initial concept to shipped product.
+Complete guide to the DREAM PLUG plugin development workflow from initial concept to shipped product.
 
 ## Overview
 
-APC uses a structured five-phase workflow that guides you through the entire plugin development process. Each phase has specific inputs, outputs, and validation criteria.
+DREAM PLUG uses a structured five-phase workflow that guides you through the entire plugin development process. Each phase has specific inputs, outputs, and validation criteria.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐

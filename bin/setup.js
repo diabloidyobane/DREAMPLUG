@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Audio Plugin Coder — One-command installer
+ * DREAM PLUG — One-command installer
  *
  * Usage:
- *   npx audio-plugin-coder@latest
- *   npx github:Noizefield/audio-plugin-coder
+ *   npx dream-plug@latest
+ *   npx github:diabloidyobane/DREAMPLUG
  */
 
 'use strict';
@@ -38,7 +38,7 @@ const dim  = (s) => `${c.dim}${s}${c.reset}`;
 function banner() {
   console.log('');
   console.log(`${c.cyan}${c.bold}╔══════════════════════════════════════════════════════╗${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║         AUDIO PLUGIN CODER  —  APC v0.3.0           ║${c.reset}`);
+  console.log(`${c.cyan}${c.bold}║            DREAM PLUG  —  v1.0.0                     ║${c.reset}`);
   console.log(`${c.cyan}${c.bold}║   AI-powered VST3/AU plugin dev with JUCE 8          ║${c.reset}`);
   console.log(`${c.cyan}${c.bold}╚══════════════════════════════════════════════════════╝${c.reset}`);
   console.log('');
@@ -134,9 +134,9 @@ function checkTools(platform) {
 
 // ─── Clone ────────────────────────────────────────────────────────────────────
 async function cloneRepo(targetDir) {
-  const repoUrl = 'https://github.com/Noizefield/audio-plugin-coder.git';
+  const repoUrl = 'https://github.com/diabloidyobane/DREAMPLUG.git';
 
-  console.log(bold('\n── Setting up Audio Plugin Coder ───────────────────────\n'));
+  console.log(bold('\n── Setting up DREAM PLUG ───────────────────────────\n'));
 
   if (fs.existsSync(path.join(targetDir, '.git'))) {
     console.log(ok(`Repository already exists at ${bold(targetDir)}`));
@@ -205,10 +205,10 @@ function printNextSteps(platform, targetDir) {
 
   console.log('');
   console.log(`  ${c.cyan}5.${c.reset} Read the docs:`);
-  console.log(`     ${dim('https://github.com/Noizefield/audio-plugin-coder#readme')}`);
+  console.log(`     ${dim('https://github.com/diabloidyobane/DREAMPLUG#readme')}`);
   console.log('');
 
-  console.log(`${c.green}${c.bold}Ready to build!${c.reset} The five-phase workflow: ${dim('Dream → Plan → Design → Implement → Ship')}`);
+  console.log(`${c.green}${c.bold}Ready to build!${c.reset} The six-phase workflow: ${dim('Dream → Plan → Design → Implement → Test → Ship')}`);
   console.log('');
 }
 
@@ -227,7 +227,7 @@ async function main() {
   console.log(info(`Detected platform: ${bold(platform)}`));
 
   // Ask where to install
-  const defaultDir = path.join(process.cwd(), 'audio-plugin-coder');
+  const defaultDir = path.join(process.cwd(), 'DREAMPLUG');
   const answer = await prompt(
     `\n${c.cyan}Install directory${c.reset} ${dim(`[${defaultDir}]`)}: `
   );
@@ -246,7 +246,7 @@ async function main() {
   printNextSteps(platform, targetDir);
 
   if (missing.length > 0) {
-    console.log(warn(`Install the missing tools above, then run ${dim('npx audio-plugin-coder@latest')} again to verify.\n`));
+    console.log(warn(`Install the missing tools above, then run ${dim('npx dream-plug@latest')} again to verify.\n`));
   }
 }
 

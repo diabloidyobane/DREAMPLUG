@@ -1,6 +1,6 @@
 # Ship Workflow Documentation
 
-This guide explains the Ship phase of the APC (Audio Plugin Coder) system, which handles packaging and distribution of plugins.
+This guide explains the Ship phase of the DREAM PLUG (DREAM PLUG) system, which handles packaging and distribution of plugins.
 
 ## Overview
 

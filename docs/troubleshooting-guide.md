@@ -1,10 +1,10 @@
 # Troubleshooting Guide
 
-Comprehensive guide for diagnosing and resolving issues in the Audio Plugin Coder framework.
+Comprehensive guide for diagnosing and resolving issues in the DREAM PLUG framework.
 
 ## Overview
 
-APC includes an auto-capture system that learns from problems. This guide covers:
+DREAM PLUG includes an auto-capture system that learns from problems. This guide covers:
 - Known issues database
 - Common problems and solutions
 - Debugging techniques

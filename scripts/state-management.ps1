@@ -1,8 +1,8 @@
 <#
 .SYNOPSIS
-    APC State Management Module
+    DREAM PLUG State Management Module
 .DESCRIPTION
-    Provides standardized state management for APC plugin development workflow
+    Provides standardized state management for DREAM PLUG plugin development workflow
 #>
 
 # --- PATH RESOLUTION ---

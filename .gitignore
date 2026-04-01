@@ -1,10 +1,7 @@
-# --- APC IGNORES ---
+# --- DREAM PLUG IGNORES ---
 
-# plugin folder
-plugins/AngelGrain
-plugins/gainknob
-plugins/CloudWash/Org_Code
-plugins/XENON
+# plugin-specific build artifacts
+# plugins/MyPlugin/build/
 
 # _tools folder
 _tools/DebugView/
@@ -45,7 +42,7 @@ Thumbs.db
 
 # Logs & Crash Reports
 logs/
-APC_CRASH_REPORT.txt
+DREAMPLUG_CRASH_REPORT.txt
 build_log.txt
 *_log.txt
 cloudwash_crash_log.txt

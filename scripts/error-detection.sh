@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Error Detection and Handling Module for APC Build Process (macOS/Linux)
+# Error Detection and Handling Module for DREAM PLUG Build Process (macOS/Linux)
 # Implements error detection and known issue matching.
 # Source this file: . scripts/error-detection.sh
 

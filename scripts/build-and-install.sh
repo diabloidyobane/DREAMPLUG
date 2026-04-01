@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# APC Master Builder (macOS)
+# DREAM PLUG Master Builder (macOS)
 # Configures, builds, and installs audio plugins using Xcode generator.
 #
 # Usage: bash scripts/build-and-install.sh <PluginName> [--no-install] [--skip-tests]
@@ -47,7 +47,7 @@ if [[ -f "$STATUS_JSON" ]] && command -v jq &>/dev/null; then
     fi
 fi
 
-echo "--- APC BUILDER: $PLUGIN_NAME ---"
+echo "--- DREAM PLUG BUILDER: $PLUGIN_NAME ---"
 if $USE_VISAGE; then
     echo "Framework: visage"
 fi
@@ -64,7 +64,7 @@ fi
 echo "Configuring build..."
 VISAGE_FLAG=""
 if $USE_VISAGE; then
-    VISAGE_FLAG="-DAPC_ENABLE_VISAGE:BOOL=ON"
+    VISAGE_FLAG="-DDP_ENABLE_VISAGE:BOOL=ON"
 fi
 
 CONFIG_OUTPUT=""

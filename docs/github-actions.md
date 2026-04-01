@@ -1,10 +1,10 @@
 # GitHub Actions CI/CD Documentation
 
-This guide covers the GitHub Actions workflows used for cross-platform plugin builds in APC.
+This guide covers the GitHub Actions workflows used for cross-platform plugin builds in DREAM PLUG.
 
 ## Overview
 
-APC uses GitHub Actions to build plugins for platforms you don't have local access to. This enables:
+DREAM PLUG uses GitHub Actions to build plugins for platforms you don't have local access to. This enables:
 
 - **Windows developers** to build macOS and Linux versions
 - **macOS developers** to build Windows and Linux versions

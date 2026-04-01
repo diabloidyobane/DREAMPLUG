@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# APC Plugin Rollback (macOS/Linux)
+# DREAM PLUG Plugin Rollback (macOS/Linux)
 # Restores a plugin from a ZIP backup.
 #
 # Usage: bash scripts/rollback.sh <PluginName> <Version>

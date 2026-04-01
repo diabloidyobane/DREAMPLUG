@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Creates Windows installer for APC plugins using Inno Setup
+    Creates Windows installer for DREAM PLUG plugins using Inno Setup
 
 .DESCRIPTION
     This script generates a Windows installer (.exe) from the Inno Setup template.
@@ -13,7 +13,7 @@
     Version number (e.g., "1.0.0")
 
 .PARAMETER CompanyName
-    Company name (default: "APC")
+    Company name (default: "DREAM PLUG")
 
 .PARAMETER PluginURL
     Plugin website URL (default: "https://github.com/noizefield/audio-plugin-coder")
@@ -28,7 +28,7 @@
 param(
     [Parameter(Mandatory=$true)][string]$PluginName,
     [Parameter(Mandatory=$true)][string]$Version,
-    [string]$CompanyName = "APC",
+    [string]$CompanyName = "DREAM PLUG",
     [string]$PluginURL = "https://github.com/noizefield/audio-plugin-coder"
 )
 

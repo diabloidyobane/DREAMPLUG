@@ -1,4 +1,4 @@
-# Error Detection and Handling Module for APC Build Process
+# Error Detection and Handling Module for DREAM PLUG Build Process
 # Implements robust error detection, known issue matching, and automated troubleshooting
 
 function Parse-BuildErrors {

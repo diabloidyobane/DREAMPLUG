@@ -1,12 +1,12 @@
-# APC Documentation
+# DREAM PLUG Documentation
 
-Welcome to the comprehensive documentation for Audio Plugin Coder (APC) - the AI-powered framework for building professional audio plugins.
+Welcome to the comprehensive documentation for DREAM PLUG - the AI-powered framework for building professional audio plugins.
 
 ## Quick Start
 
-New to APC? Start here:
+New to DREAM PLUG? Start here:
 
-1. **[Project Overview](../README.md)** - What is APC and key features
+1. **[Project Overview](../README.md)** - What is DREAM PLUG and key features
 2. **[Plugin Development Lifecycle](plugin-development-lifecycle.md)** - The five-phase workflow
 3. **[Command Reference](command-reference.md)** - All available commands
 4. **[FAQ](FAQ.md)** - Common questions answered
@@ -26,7 +26,7 @@ New to APC? Start here:
 
 | Document | Description |
 |----------|-------------|
-| [State Management Deep Dive](state-management-deep-dive.md) | How APC tracks and manages project state |
+| [State Management Deep Dive](state-management-deep-dive.md) | How DREAM PLUG tracks and manages project state |
 | [Build System](build-system.md) | CMake configuration and build scripts |
 | [WebView Framework](webview-framework.md) | Building plugins with HTML/CSS/JS UIs |
 
@@ -58,7 +58,7 @@ New to APC? Start here:
 
 ## The Five-Phase Workflow
 
-APC uses a structured workflow for plugin development:
+DREAM PLUG uses a structured workflow for plugin development:
 
 ```
 💭 DREAM → 📋 PLAN → 🎨 DESIGN → 💻 IMPLEMENT → 🚀 SHIP
@@ -107,7 +107,7 @@ Full reference: [Command Reference](command-reference.md)
 
 ## UI Frameworks
 
-APC supports two UI frameworks:
+DREAM PLUG supports two UI frameworks:
 
 ### WebView (HTML/CSS/JS)
 - Modern web technologies
@@ -136,7 +136,7 @@ Learn more: [WebView Framework Guide](webview-framework.md)
 ## Project Structure
 
 ```
-audio-plugin-coder/
+DREAMPLUG/
 ├── .agent/              # AI agent configuration
 │   ├── skills/             # Domain knowledge
 │   ├── workflows/          # Slash commands
@@ -181,7 +181,7 @@ Having issues? Check these resources:
 
 ## Contributing
 
-Want to improve APC? See [CONTRIBUTING.md](../CONTRIBUTING.md) for:
+Want to improve DREAM PLUG? See [CONTRIBUTING.md](../CONTRIBUTING.md) for:
 - Adding new skills
 - Reporting bugs
 - Improving documentation
@@ -195,7 +195,7 @@ Want to improve APC? See [CONTRIBUTING.md](../CONTRIBUTING.md) for:
 
 ## License
 
-APC is licensed under the MIT License. See [LICENSE](../LICENCE.md) for details.
+DREAM PLUG is licensed under the MIT License. See [LICENSE](../LICENCE.md) for details.
 
 ---
 

@@ -23,12 +23,12 @@ if (Test-Path $StatusJson) {
 }
 
 $VisageFlag = @()
-if ($UseVisage) { $VisageFlag += "-DAPC_ENABLE_VISAGE:BOOL=ON" }
+if ($UseVisage) { $VisageFlag += "-DDP_ENABLE_VISAGE:BOOL=ON" }
 
 $FrameworkName = if ($UseVisage) { "visage" } else { "webview" }
 Write-Host "Framework: $FrameworkName" -ForegroundColor DarkGray
 
-Write-Host "--- APC PREVIEW: $PluginName ---" -ForegroundColor Cyan
+Write-Host "--- DREAM PLUG PREVIEW: $PluginName ---" -ForegroundColor Cyan
 
 # 1. Configure (ensure correct framework flags)
 Write-Host "Configuring..." -ForegroundColor Yellow
@@ -36,8 +36,8 @@ cmake -B "$BuildDir" -G "Visual Studio 17 2022" -A x64 --fresh @VisageFlag
 
 if ($UseVisage -and (Test-Path "$BuildDir\CMakeCache.txt")) {
     $cache = Get-Content "$BuildDir\CMakeCache.txt" -Raw
-    if ($cache -notmatch "APC_ENABLE_VISAGE:BOOL=ON") {
-        throw "APC_ENABLE_VISAGE is OFF in CMakeCache.txt. Reconfigure with -DAPC_ENABLE_VISAGE=ON."
+    if ($cache -notmatch "DP_ENABLE_VISAGE:BOOL=ON") {
+        throw "DP_ENABLE_VISAGE is OFF in CMakeCache.txt. Reconfigure with -DDP_ENABLE_VISAGE=ON."
     }
 }
 
@@ -53,7 +53,7 @@ if ($Exe) {
     Write-Host "Launching..." -ForegroundColor Green
     $p = Start-Process -FilePath $Exe.FullName -PassThru -Wait
     if ($p.ExitCode -ne 0) {
-        Write-Warning "CRASH DETECTED. Check Documents/APC_CRASH_REPORT.txt"
+        Write-Warning "CRASH DETECTED. Check Documents/DREAMPLUG_CRASH_REPORT.txt"
     }
 } else {
     Write-Error "Standalone EXE not found."

@@ -1,10 +1,10 @@
 # Command Reference
 
-Complete reference for all APC commands, slash commands, and PowerShell scripts.
+Complete reference for all DREAM PLUG commands, slash commands, and PowerShell scripts.
 
 ## Overview
 
-APC provides multiple ways to interact with the system:
+DREAM PLUG provides multiple ways to interact with the system:
 - **Slash Commands** - AI agent commands (`/dream`, `/plan`, etc.)
 - **PowerShell Scripts** - Build and utility scripts
 - **GitHub Actions** - CI/CD workflows
@@ -14,7 +14,7 @@ APC provides multiple ways to interact with the system:
 
 ## Slash Commands
 
-Slash commands are the primary way to interact with APC through AI agents.
+Slash commands are the primary way to interact with DREAM PLUG through AI agents.
 
 ### `/dream [Name]`
 
@@ -359,7 +359,7 @@ Validates state management system integrity.
 powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1
 ```
 
-Initializes APC environment:
+Initializes DREAM PLUG environment:
 - Checks prerequisites
 - Initializes git submodules
 - Validates JUCE installation
@@ -454,7 +454,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\installer\create-windows-inst
 |-----------|----------|---------|-------------|
 | `PluginName` | Yes | - | Plugin folder name |
 | `Version` | Yes | - | Version number (e.g., "1.0.0") |
-| `CompanyName` | No | "APC" | Company name |
+| `CompanyName` | No | "DREAM PLUG" | Company name |
 | `PluginURL` | No | GitHub URL | Plugin website |
 
 ---

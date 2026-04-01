@@ -1,10 +1,10 @@
 # Build System Documentation
 
-Complete guide to the APC build system, including CMake configuration, PowerShell scripts, and cross-platform considerations.
+Complete guide to the DREAM PLUG build system, including CMake configuration, PowerShell scripts, and cross-platform considerations.
 
 ## Overview
 
-APC uses a CMake-based build system with JUCE 8 as the audio plugin framework. The build process is orchestrated through PowerShell scripts to ensure consistency and proper error handling.
+DREAM PLUG uses a CMake-based build system with JUCE 8 as the audio plugin framework. The build process is orchestrated through PowerShell scripts to ensure consistency and proper error handling.
 
 **Key Principles:**
 - Never run cmake/msbuild directly - always use scripts
@@ -19,7 +19,7 @@ APC uses a CMake-based build system with JUCE 8 as the audio plugin framework. T
 ### Directory Structure
 
 ```
-audio-plugin-coder/
+DREAMPLUG/
 ├── CMakeLists.txt              # Root CMake configuration
 ├── _tools/
 │   └── JUCE/
@@ -119,7 +119,7 @@ set(PLUGIN_NAME MyPlugin)
 
 # JUCE plugin definition
 juce_add_plugin(${PLUGIN_NAME}
-    COMPANY_NAME "APC"
+    COMPANY_NAME "DREAM PLUG"
     PLUGIN_MANUFACTURER_CODE Apco
     PLUGIN_CODE MyPl
     FORMATS ${FORMATS}
@@ -602,7 +602,7 @@ cmake -S . -B build  # Don't run directly
 ### 2. Build from Root
 
 ```powershell
-# Good (from audio-plugin-coder/)
+# Good (from DREAMPLUG/)
 powershell -ExecutionPolicy Bypass -File .\scripts\build-and-install.ps1 -PluginName MyPlugin
 
 # Bad (from plugin directory)

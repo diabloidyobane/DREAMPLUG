@@ -1,16 +1,16 @@
 # Frequently Asked Questions (FAQ)
 
-Common questions and answers about the Audio Plugin Coder framework.
+Common questions and answers about the DREAM PLUG framework.
 
 ## General Questions
 
-### What is Audio Plugin Coder?
+### What is DREAM PLUG?
 
-APC is a structured, AI-driven workflow system for building audio plugins. It guides LLM agents through the entire plugin development lifecycle from concept to shipped product using a five-phase workflow: Dream → Plan → Design → Implement → Ship.
+DREAM PLUG is a structured, AI-driven workflow system for building audio plugins. It guides LLM agents through the entire plugin development lifecycle from concept to shipped product using a five-phase workflow: Dream → Plan → Design → Implement → Ship.
 
-### Who is APC for?
+### Who is DREAM PLUG for?
 
-APC is designed for:
+DREAM PLUG is designed for:
 - **Audio developers** who want to leverage AI for faster development
 - **AI coding agent users** who need structured context for audio plugin tasks
 - **Musicians/Producers** who want to create their own plugins
@@ -37,16 +37,16 @@ APC is designed for:
 
 ## Getting Started
 
-### How do I install APC?
+### How do I install DREAM PLUG?
 
 ```powershell
 # Clone with submodules
-git clone --recursive https://github.com/Noizefield/audio-plugin-coder.git
-cd audio-plugin-coder
+git clone --recursive https://github.com/Noizefield/DREAMPLUG.git
+cd DREAMPLUG
 
 # Or clone and initialize separately
-git clone https://github.com/Noizefield/audio-plugin-coder.git
-cd audio-plugin-coder
+git clone https://github.com/Noizefield/DREAMPLUG.git
+cd DREAMPLUG
 git submodule update --init --recursive
 ```
 
@@ -89,7 +89,7 @@ The AI will guide you through:
 
 ### Can I skip phases?
 
-No. APC enforces phase completion to ensure quality. Each phase validates prerequisites before proceeding.
+No. DREAM PLUG enforces phase completion to ensure quality. Each phase validates prerequisites before proceeding.
 
 ### How do I check my progress?
 
@@ -242,7 +242,7 @@ Or let the `/ship` command handle it.
 ### Where are error logs?
 
 - **Build errors:** Console output from build script
-- **Plugin crashes:** Documents/APC_CRASH_REPORT.txt
+- **Plugin crashes:** Documents/DREAMPLUG_CRASH_REPORT.txt
 - **State errors:** `plugins/MyPlugin/status.json` → `error_recovery.error_log`
 
 ### How do I debug a crash?
@@ -285,7 +285,7 @@ git checkout -- plugins/MyPlugin/
 
 ## AI Agent Questions
 
-### Which AI agents work with APC?
+### Which AI agents work with DREAM PLUG?
 
 **Tested:**
 - ✅ Claude Code (Anthropic)
@@ -298,20 +298,20 @@ git checkout -- plugins/MyPlugin/
 
 ### Do I need a specific AI agent?
 
-No. APC is agent-agnostic. Any agent that supports:
+No. DREAM PLUG is agent-agnostic. Any agent that supports:
 - File system access
 - PowerShell execution
 - Workflow/slash commands
 
 ### How does the AI know what to do?
 
-APC provides:
+DREAM PLUG provides:
 - **Workflows** - Step-by-step phase instructions
 - **Skills** - Domain knowledge (DSP, UI, etc.)
 - **State Management** - Tracks progress
 - **Rules** - Constraints and best practices
 
-### Can I use APC without an AI agent?
+### Can I use DREAM PLUG without an AI agent?
 
 Yes, but it's designed for AI assistance. You can manually:
 1. Read the skill files in `.agent/skills/`
@@ -324,7 +324,7 @@ Yes, but it's designed for AI assistance. You can manually:
 
 ### Can I modify generated code?
 
-Yes. The code is yours to modify. APC provides a starting point.
+Yes. The code is yours to modify. DREAM PLUG provides a starting point.
 
 ### How do I add custom DSP?
 
@@ -389,17 +389,17 @@ Follow the existing skill format.
 
 ## Licensing Questions
 
-### What license is APC under?
+### What license is DREAM PLUG under?
 
 MIT License - see [LICENSE](../LICENCE.md)
 
-### Can I sell plugins made with APC?
+### Can I sell plugins made with DREAM PLUG?
 
-Yes. Plugins you create are yours. APC is a tool, like a compiler.
+Yes. Plugins you create are yours. DREAM PLUG is a tool, like a compiler.
 
-### Do I need to credit APC?
+### Do I need to credit DREAM PLUG?
 
-No, but it's appreciated. You can mention "Built with Audio Plugin Coder" if you'd like.
+No, but it's appreciated. You can mention "Built with DREAM PLUG" if you'd like.
 
 ---
 
